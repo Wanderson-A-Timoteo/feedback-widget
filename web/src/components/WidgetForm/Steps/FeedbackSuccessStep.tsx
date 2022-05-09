@@ -1,5 +1,7 @@
 export function FeedbackSuccessStep() {
   return(
-    <div></div>
+    <div>
+      <h1>Sucesso</h1>
+    </div>
   )
 }
