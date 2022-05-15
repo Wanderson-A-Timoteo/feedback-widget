@@ -16,12 +16,11 @@ describe('Submit feedback', () => {
       comment: 'Example comment',
       screenshot: 'data:image/png;base64,giugo',
     })).resolves.not.toThrow();
-  })
-  expect(createFeedbackSpy).toHaveBeenCalled();
-  expect(sendMailSpy).toHaveBeenCalled();
-});
 
-describe('Submit feedback', () => {
+    expect(createFeedbackSpy).toHaveBeenCalled();
+    expect(sendMailSpy).toHaveBeenCalled();
+  });
+
   it('shoud not be able to submit a feedback without type', async () => {
     
     await expect(submitFeedback.execute({
@@ -29,10 +28,8 @@ describe('Submit feedback', () => {
       comment: 'Example comment',
       screenshot: 'data:image/png;base64,giugo',
     })).rejects.toThrow();
-  })
-});
+  });
 
-describe('Submit feedback', () => {
   it('shoud not be able to submit a feedback without comment', async () => {
     
     await expect(submitFeedback.execute({
@@ -40,10 +37,8 @@ describe('Submit feedback', () => {
       comment: '',
       screenshot: 'data:image/png;base64,giugo',
     })).rejects.toThrow();
-  })
-});
+  });
 
-describe('Submit feedback', () => {
   it('shoud not be able to submit a feedback with an invalid screenshot', async () => {
     
     await expect(submitFeedback.execute({
