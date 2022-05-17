@@ -103,7 +103,7 @@ Você pode visualizar o layout do projeto através [desse link](https://www.figm
 
 <p align="center">
     <img  alt="Imagem dos testes unitários" title="Testes Unitários" 
-    src=".github/jest-test.PNG" />
+    src=".github/jest-test.png" />
 </p>
 
 <p align="center">
