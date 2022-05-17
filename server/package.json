@@ -10,7 +10,7 @@
     "dev": "ts-node-dev src/server.ts"
   },
   "keywords": [],
-  "author": "",
+  "author": "Wanderson A. Timóteo",
   "license": "ISC",
   "devDependencies": {
     "@swc/core": "^1.2.183",
